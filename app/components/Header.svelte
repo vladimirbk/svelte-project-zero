@@ -1,22 +1,23 @@
 <script>
     import Navigation from './Navigation.svelte';
-    import icons from '../../scripts/icons';
+    import icons from './scripts/icons';
 
 </script>
 
 <div>
-    <img src= {icons.bull} alt="bull logo">
+    <img src= {icons.fire} alt="bull logo">
     <Navigation/>
 </div>
 
 <style>
     div {
-        position: fixed;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
         background-color: gold;
     }
     img {
-        width: 200px;
-        height: 150px;
+        width: 100px;
+        height: 66px;
     }
 </style>
