@@ -1,13 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 
 let pathModules = './node_modules';
 let pathPackageLock = './package-lock.json';
 
-//TODO
-if (fs.existsSync(pathModules) || fs.existsSync(pathPackageLock)) {
-    fs.rmdirSync(pathModules, { recursive: true });
-    fs.unlinkSync(pathPackageLock);
-    console.log("Node modules were uninstalled");
-} else {
-    console.log("It's already deleted");
-}
+const modulesToDelete = [pathModules, pathPackageLock];
+
+modulesToDelete.forEach((module) => {
+    if (fs.existsSync(module) && path.basename(module)  === 'package-lock.json') fs.unlinkSync(module);
+    else fs.rmdirSync(module, { recursive: true })
+});
