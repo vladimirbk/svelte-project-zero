@@ -27,7 +27,6 @@
 <style>
     main {
         background-color: aliceblue;
-        padding: 74px 0 121px 0;
     }
     p {
         width: 50%;
