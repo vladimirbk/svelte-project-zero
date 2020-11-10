@@ -11,6 +11,8 @@
     nav {
         display: flex;
         background-color: pink;
+        margin-right: 100px;
+        padding-right: 50px;
     }
     ul {
         width: 100%;
@@ -20,6 +22,7 @@
     }
     li {
         margin: 0 20px 0 20px;
+        padding-top: 5px;
         list-style-type: none;
     }
 </style>
