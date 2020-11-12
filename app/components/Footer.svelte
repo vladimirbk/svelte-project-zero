@@ -1,5 +1,5 @@
 <script>
-    import icons from './scripts/icons';
+    import icons from '../scripts/icons';
 </script>
 <div class="content-center">
     <div class="text-container">

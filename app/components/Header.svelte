@@ -1,6 +1,6 @@
 <script>
     import Navigation from './Navigation.svelte';
-    import icons from './scripts/icons';
+    import icons from '../scripts/icons';
 
 </script>
 
